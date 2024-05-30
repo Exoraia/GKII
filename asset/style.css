@@ -1,3 +1,5 @@
+
+
 body {
     font-family: "Montserrat";
     margin: 0px;
@@ -43,10 +45,12 @@ nav {
     left: 0;
     z-index: 100;
     background-color: white;
+    padding-left: 10px;
+    height: 65px;
 }
 
 .topbar {
-    
+    position: sticky;
     display: flex;
     flex-direction: row;
 }
@@ -73,6 +77,11 @@ nav {
     align-items: center;    
     text-align: center;
     margin-right: 20px;
+}
+
+.active {
+    border-bottom: 3px solid black;
+    font-weight: 500;
 }
 
 nav ul {
@@ -104,6 +113,8 @@ nav li a {
     position: relative;
     text-align: center;
 }
+
+/*halaman 1*/
 
 /*content*/
 
@@ -214,18 +225,102 @@ nav li a {
     margin: 15px 30px;
 }
 
+/*jadwal*/
+
+.sub-title {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-left: 50px;
+    gap: 40px;
+}
+
+.hari {
+    display: flex;
+    flex-direction: column;
+}
+
+.hari p {
+    gap: 5px;
+}
+
+.pembatas {
+    height: 200px;
+    width: 1px;
+    background-color: black;
+}
+
+.jam {
+    display: flex;
+    flex-direction: column;
+}
+
+.jam p {
+    gap: 5px;
+}
+
+
+/*informasi kegiatan*/
+
+/*tentang kami*/
+
+.deskripsi {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.visi-misi {
+    display: flex;
+    flex-direction: column;
+}
+
+.visi {
+    height: 200px;
+    background-color: #F5F5F5;
+    justify-items: center;
+    align-items: center;
+}
+
+.misi {
+    background-color: #969696;
+    color: white;
+}
+
+.poin-visi p {
+    flex-direction: column;
+    display: flex;
+    gap: 0px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+/*Footer*/
+
+.sisi_kiri h3 {
+    display: block;
+    line-height: 1; /* Mengontrol jarak antar huruf */
+}
+.sisi_kiri {
+    display: inline-block;
+}
+
 footer {
     color: white;
     background-color: #1E1E1E;
     padding: 20px;
     padding-left: 60px;
+    padding-right: 10px;
     display: flex;
     flex-direction: row;
+    height: 250px;
+}
+
+footer > * {
+    flex: 1 1 0;
 }
 
 .sisi_kiri {
-    margin-right: 30px;
-    padding-right: 100px;
+
 }
 
 .sosmed p {
@@ -233,7 +328,12 @@ footer {
 }
 
 .icon {
+    display: flex;
+    gap: 5px;
+}
 
+.sisi_tengah {
+    margin-left: 40px;
 }
 
 .sisi_tengah p {
@@ -241,5 +341,9 @@ footer {
 }
 
 .sisi_kanan {
-    align-items: flex-end;
+    align-self: flex-end;
+    padding-left: 90px;
+    margin-left: 40px;
+    font-style: italic;
 }
+
