@@ -273,18 +273,25 @@ nav li a {
 .visi-misi {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
+
 
 .visi {
     height: 200px;
     background-color: #F5F5F5;
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .misi {
+    height: 200px;
     background-color: #969696;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .poin-visi p {
