@@ -366,13 +366,25 @@ h6{
     margin-bottom: 5px;
 }
 
-.susunan {
+.susunan > h1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px;
+
 }
 
 .nama-bagian {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.nama-bagian h3 {
+    margin-bottom: 10px;
 }
 
 .posisi-dan-nama {
@@ -381,11 +393,16 @@ h6{
 }
 
 .posisi {
-
+    font-weight: 500;
+    flex: 1 1 0;
 }
 
-.nama-bagian > .posisi-dan-nama > .nama {
-    list-style-type: none;
+.nama {
+    flex: 1 1 0;
+}
+
+.nama-bagian li {
+    list-style: none;
 }
 /*Login*/
 
@@ -529,7 +546,7 @@ h6{
 
 .sisi_kiri h3 {
     display: block;
-    line-height: 1; /* Mengontrol jarak antar huruf */
+    line-height: 1; 
 }
 .sisi_kiri {
     display: inline-block;
