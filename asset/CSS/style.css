@@ -18,7 +18,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 40px;
     background: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -168,7 +168,7 @@ h6{
     color:white;
     font-size: 50px;
 }
-/*halaman 1*/
+/*Main*/
 
 /*content*/
 
@@ -320,8 +320,29 @@ h6{
     gap: 5px;
 }
 
-
 /*informasi kegiatan*/
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.kegiatan {
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.gambar-kegiatan {
+    height: 200px;
+}
+
+.penjelasan {
+
+}
 
 /*tentang kami*/
 
@@ -404,6 +425,7 @@ h6{
 .nama-bagian li {
     list-style: none;
 }
+
 /*Login*/
 
 .wrapper {
@@ -485,7 +507,6 @@ h6{
     top: -5px;
 }
 
-
 .input-box input {
     width: 100%;
     height: 100%;
@@ -547,6 +568,7 @@ h6{
 .sisi_kiri h3 {
     display: block;
     line-height: 1; 
+    margin-bottom: 10px;
 }
 .sisi_kiri {
     display: inline-block;
