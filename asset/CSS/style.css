@@ -288,36 +288,47 @@ h6{
 
 /*jadwal*/
 
-.sub-title {
+.jadwal {
+    margin-bottom: 20px;
+}
+
+.sub-jadwal {
     display: flex;
     flex-direction: row;
-    margin: 20px;
-    margin-left: 50px;
-    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 110px;
 }
 
-.hari {
-    display: flex;
-    flex-direction: column;
+.jadwal-ibadah {
+    position: relative;
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 14px 0px lightgray;
 }
 
-.hari p {
-    gap: 5px;
+.jadwal-ibadah > img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
-.pembatas {
-    height: 200px;
-    width: 1px;
-    background-color: black;
+.jadwal-ibadah > h3 {
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
-.jam {
-    display: flex;
-    flex-direction: column;
+.jadwal-ibadah > h5 {
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
-.jam p {
-    gap: 5px;
+.jadwal-ibadah > p {
+    position: absolute;
+    bottom: 10px;
+    right: 10px; 
+    font-weight: 500;
 }
 
 /*informasi kegiatan*/
@@ -334,10 +345,6 @@ h6{
     display: flex;
     flex-direction: row;
     gap: 30px;
-}
-
-.gambar-kegiatan {
-    height: 200px;
 }
 
 .penjelasan {
@@ -563,6 +570,103 @@ h6{
     font-weight: 500;
 }
 
+/* Calendar */
+.calendar-wrp {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.wrapper-c {
+    justify-content: center;
+    width: 450px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  }
+  .wrapper-c .header-c {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+  }
+  .header-c .icons{
+    display: flex;
+  }
+  .header-c .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+  }
+  .icons span:last-child{
+    margin-right: -10px;
+  }
+  .header-c .icons span:hover{
+    background: #f2f2f2;
+  }
+  .header-c .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+  }
+  .calendar{
+    padding: 20px;
+  }
+  .calendar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+  }
+  .calendar .days{
+    margin-bottom: 20px;
+  }
+  .calendar li{
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+  }
+  .calendar .weeks li{
+    font-weight: 500;
+    cursor: default;
+  }
+  .calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+  }
+  .days li.inactive{
+    color: #aaa;
+  }
+  .days li.active{
+    color: #fff;
+  }
+  .days li::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .days li.active::before{
+    background: #9B59B6;
+  }
+  .days li:not(.active):hover::before{
+    background: #f2f2f2;
+  }
+  
 /*Footer*/
 
 .sisi_kiri h3 {
